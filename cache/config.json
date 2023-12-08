@@ -1,0 +1,6 @@
+{
+  "PORT": 3001,
+  "REDIS": 6379,
+  "URL": "https://jsonplaceholder.typicode.com/photos",
+  "EXPIRATION_TIME": 3600
+}
