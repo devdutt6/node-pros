@@ -1,0 +1,24 @@
+{
+  "name": "Validations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "nodemon app.js",
+    "buildWatchSRC": "babel src -w -d prod",
+    "buildWatchFile": "babel app.js -w -o app_compiled.js",
+    "buildSRC": "babel controllers -d prod",
+    "buildFile": "babel app.js -o app_compiled.js",
+    "start": "yarn run build&&nodemon app_compiled.js",
+    "server": "node app_compiled.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "mongoose": "^6.0.13"
+  }
+}
